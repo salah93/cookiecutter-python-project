@@ -1,2 +1,10 @@
 [tool.black]
 line-length = 79
+
+[tool.coverage.run]
+parallel = true
+branch = true
+source = ["{{cookiecutter.package}}"]
+
+[tool.coverage.paths]
+source = ["src", ".tox/*/site-packages"]

@@ -5,5 +5,5 @@ Python Project Template
 
 .. code-block:: bash
 
-   >>> pipx install cookiecutter
-   >>> cookiecutter gh:salah93/cookiecutter-python-project
+   pipx install cookiecutter
+   cookiecutter gh:salah93/cookiecutter-python-project

@@ -1,2 +1,2 @@
 include README*
-recursive-include {{cookiecutter.package}} *
+recursive-include src/{{cookiecutter.package}} *

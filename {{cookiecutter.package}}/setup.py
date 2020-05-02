@@ -14,7 +14,7 @@ AUTHOR = "{{ cookiecutter.author.name }}"
 AUTHOR_EMAIL = "{{ cookiecutter.author.email }}"
 
 REQUIREMENTS = []
-TEST_REQUIREMENTS = ["pytest-cov"]
+TEST_REQUIREMENTS = ["pytest-cov", "coverage[toml]"]
 DEV_REQUIREMENTS = [
     "ipython",
     "pdbpp",

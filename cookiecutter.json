@@ -1,7 +1,10 @@
 {
-  "package": "",
-  "author": {
-    "name": "Salah Ahmed",
-    "email": "salahs.email@pm.me"
-  }
+    "package": "",
+    "author": {
+        "name": "Salah Ahmed",
+        "email": "salahs.email@pm.me"
+    },
+    "_copy_without_render": [
+        ".github/workflows/main.yml"
+    ]
 }

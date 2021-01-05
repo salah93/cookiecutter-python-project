@@ -10,8 +10,8 @@ CLASSIFIERS = [
 DESCRIPTION = ""
 KEYWORDS = ["python"]
 URL = ""
-AUTHOR = "{{ cookiecutter.author.name }}"
-AUTHOR_EMAIL = "{{ cookiecutter.author.email }}"
+AUTHOR = "{{ cookiecutter.author_name }}"
+AUTHOR_EMAIL = "{{ cookiecutter.author_email }}"
 
 REQUIREMENTS = []
 TEST_REQUIREMENTS = ["pytest-cov", "coverage[toml]"]

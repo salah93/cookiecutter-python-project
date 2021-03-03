@@ -1,13 +1,9 @@
-{{cookiecutter.package}}
-=======================
+# {{cookiecutter.package}}
 
 
-Developing
----------
+## Developing
 
-.. -code-begin-
-
-.. code-block:: bash
-
-   >>> pip install -e '.[dev]'
-   >>> tox -e lint && tox
+```bash
+$ pip install -e '.[dev]'
+$ tox -e lint && tox
+```

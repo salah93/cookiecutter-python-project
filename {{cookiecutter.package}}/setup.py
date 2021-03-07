@@ -23,6 +23,7 @@ DEV_REQUIREMENTS = [
     "black==19.10b0",
     "isort==5.6.4",
     "flake8",
+    "mypy",
     "pre-commit",
     "tox",
 ]
@@ -44,6 +45,7 @@ setup(
     keywords=KEYWORDS,
     packages=find_packages(where="src"),
     package_dir={"": "src"},
+    package_data={"{{cookiecutter.package}}": ["py.typed", "stubs/**/*.pyi"]},
     include_package_data=True,
     zip_safe=False,
     install_requires=REQUIREMENTS,

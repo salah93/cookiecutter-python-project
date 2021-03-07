@@ -30,14 +30,14 @@ DEV_REQUIREMENTS = [
 
 #####
 
-with open("README.rst", encoding="utf-8") as f:
+with open("README.md", encoding="utf-8") as f:
     LONG_DESCRIPTION = f.read()
 
 setup(
     name="{{cookiecutter.package}}",
     description=DESCRIPTION,
     long_description=LONG_DESCRIPTION,
-    long_description_content_type="text/rst",
+    long_description_content_type="text/markdown",
     classifiers=CLASSIFIERS,
     author=AUTHOR,
     author_email=AUTHOR_EMAIL,

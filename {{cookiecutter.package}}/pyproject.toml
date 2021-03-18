@@ -1,5 +1,6 @@
 [tool.black]
 line-length = 79
+target-version = py37
 
 [tool.coverage.run]
 parallel = true

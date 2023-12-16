@@ -38,8 +38,7 @@ dev = [
 
 
 [tool.black]
-line-length = 79
-target-version = ["py37"]
+line-length = 80
 
 [tool.coverage.run]
 parallel = true
@@ -55,4 +54,4 @@ profile = "black"
 include_trailing_comma = true
 force_grid_wrap = 0
 use_parentheses = true
-line_length = 79
+line_length = 80

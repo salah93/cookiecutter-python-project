@@ -4,6 +4,6 @@
     "author_email": "salahs.email@pm.me",
     "repo_url": "",
     "_copy_without_render": [
-        ".github/workflows/main.yml"
+        ".github/workflows/tox.yml"
     ]
 }

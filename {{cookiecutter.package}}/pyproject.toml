@@ -1,3 +1,42 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "{{cookiecutter.package}}"
+description = ""
+readme = {file="README.md", content_type="text/markdown"}
+version = "0.0.1"
+dependencies = []
+authors = [
+  {name="{{ cookiecutter.author_name }}", email="{{ cookiecutter.author_email }}"},
+]
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+keywords = []
+
+[project.urls]
+Repository = "{{ cookiecutter.repo_url }}"
+
+[project.optional-dependencies]
+test = ["pytest-cov", "coverage[toml]"]
+dev = [
+    "ipython",
+    "jedi==0.17.2",
+    "pdbpp",
+    "black==19.10b0",
+    "isort==5.6.4",
+    "flake8",
+    "mypy",
+    "pre-commit",
+    "tox",
+]
+
+
 [tool.black]
 line-length = 79
 target-version = py37

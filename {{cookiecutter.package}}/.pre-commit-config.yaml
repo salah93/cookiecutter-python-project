@@ -1,14 +1,24 @@
 repos:
--   repo: https://github.com/psf/black
-    rev: 19.10b0
+  - repo: https://github.com/psf/black-pre-commit-mirror
+    rev: 23.12.0
     hooks:
-    - id: black
-      language_version: python3.7
--   repo: https://github.com/pre-commit/pre-commit-hooks
-    rev: v1.2.3
+      - id: black
+  - repo: https://github.com/pycqa/isort
+    rev: 5.13.2
     hooks:
-    - id: flake8
--   repo: https://github.com/timothycrosley/isort
-    rev: 5.6.4
+      - id: isort
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.5.0
     hooks:
-    - id: isort
+      - id: check-ast
+      - id: check-executables-have-shebangs
+      - id: check-json
+      - id: check-shebang-scripts-are-executable
+      - id: check-toml
+      - id: check-yaml
+      - id: pretty-format-json
+  - repo: https://github.com/pycqa/flake8
+    rev: 6.1.0
+    hooks:
+      - id: flake8
+        additional_dependencies: [flake8-bugbear]
